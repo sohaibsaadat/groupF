@@ -93,7 +93,6 @@ function startWeatherClock(apiTime, timezoneOffset) {
     const options = {
       hour: '2-digit',
       minute: '2-digit',
-      second:'2-digit',
       hour12: true,
       weekday: 'long',
       day: 'numeric',
@@ -115,7 +114,7 @@ function startWeatherClock(apiTime, timezoneOffset) {
 
   setTimeout(() => {
     updateClock();
-    clockIntervalId = setInterval(updateClock, 1000);
+    clockIntervalId = setInterval(updateClock, 60000);
   }, msToNextMinute);
 }
 
