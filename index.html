@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<!-- body -->
+
+<body class="flex lg:flex-row justify-between flex-col  ">
+  <div id="background" class="background-layer"></div>
+
+    <!-- navbar start -->
+    <nav class="temp lg:w-1/2 w-full flex   flex-col    ">
+        <div class="absolute w-full  p-5 ">
+            <img class="w-30 h-30" src="images/logo.svg" alt="">
+        </div>
+        <div class="relative top-0 h-full text-center flex justify-center gap flex-col  text-white">
+            <div class="flex justify-center flex-row items-center">
+                <span class="sm:text-9xl text-6xl  font-bold">°</span>
+                <span class="sm:text-7xl text-4xl  font-bold"></span>
+            </div>
+            <p  id="date-time" class="text-xl  sm:text-2xl"> </p>
+        </div>
+    </nav>
+    <!-- navbar end -->
+     <!-- rightbox -->
+    <div class=" lg:w-1/2  w-full flex justify-end pr-7 p-3     h-full ">
+        <div class="w-[100%] max-w-[100%] h-[100%] card">
+<div class="w-full flex justify-center gap-5 p-10">
+<input class="w-[50%] lg:text-xl text-xl h-10 border-white border-b-3" id="city" type="text" placeholder="Search Location">
+<img src="images/fa_search.svg" alt="">
+</div>
+<div class="text-start flex flex-col gap-20 pl-5 text-xl">
+    Weather Details.......
+<p class="lg:text-2xl text-sm font-bold"></p>
+</div>
+<div class="flex justify-center">
+<div class="bg md:w-[80%] font-bold w-60   ">
+<div class="weather-item flex items-center justify text-center" >
+  <span>Temperature max</span>
+  <span>19° <i class=" text-4xl uil uil-temperature-half"></i></span>
+</div>
+<div class="weather-item">
+  <span>Temperature min</span>
+  <span>15° <i class="text-4xl uil uil-temperature-empty"></i></span>
+</div>
+<div class="weather-item">
+  <span>Humidity</span>
+  <span>58% <i class="text-4xl uil uil-tear"></i></span>
+</div>
+<div class="weather-item">
+  <span>Cloudy</span>
+  <span>86% <i class="text-4xl uil uil-cloud"></i></span>
+</div>
+<div class="weather-item">
+  <span>Wind</span>
+  <span>5km/h <i class="text-4xl uil uil-wind"></i></span>
+</div>
+
+
+</div>
+
+</div>
+        </div>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
